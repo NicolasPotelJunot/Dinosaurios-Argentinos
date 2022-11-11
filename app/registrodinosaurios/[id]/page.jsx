@@ -23,7 +23,7 @@ export default function DinoScreen({ params }) {
   useEffect(() => {
     const dino = dinosaurios.find((dino) => dino.id === id);
     setDinoFind(dino);
-  }, []);
+  }, [id]);
 
   return (
     <section className="">

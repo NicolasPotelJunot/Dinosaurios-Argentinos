@@ -2,17 +2,17 @@ import Image from "next/image";
 import Link from "next/link.js";
 
 export const ListDinos = ({ dataDino, query }) => {
-  dataDino.sort((a, b) => {
-    const idDinoA = a.namedino.toLowerCase();
-    const idDinoB = b.namedino.toLowerCase();
-    if (idDinoA < idDinoB) {
-      return -1;
-    }
-    if (idDinoA > idDinoB) {
-      return 1;
-    }
-    return 0;
-  });
+  // dataDino.sort((a, b) => {
+  //   const idDinoA = a.namedino.toLowerCase();
+  //   const idDinoB = b.namedino.toLowerCase();
+  //   if (idDinoA < idDinoB) {
+  //     return -1;
+  //   }
+  //   if (idDinoA > idDinoB) {
+  //     return 1;
+  //   }
+  //   return 0;
+  // });
 
   return (
     <div className="grid-cols-5 grid gap-5">
